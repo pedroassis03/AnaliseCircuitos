@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Sistemas));
             this.lb_numEquacoes = new System.Windows.Forms.Label();
             this.tb_numEquacoes = new System.Windows.Forms.TextBox();
             this.btn_Confirmar = new System.Windows.Forms.Button();
@@ -35,6 +36,8 @@
             this.btn_CalcularSistema = new System.Windows.Forms.Button();
             this.pnl_Equacoes = new System.Windows.Forms.Panel();
             this.pn_Circuitos_Menu = new System.Windows.Forms.Panel();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.pn_Circuitos_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_numEquacoes
@@ -101,10 +104,22 @@
             // pn_Circuitos_Menu
             // 
             this.pn_Circuitos_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(76)))), ((int)(((byte)(143)))));
+            this.pn_Circuitos_Menu.Controls.Add(this.btnVoltar);
             this.pn_Circuitos_Menu.Location = new System.Drawing.Point(0, -1);
             this.pn_Circuitos_Menu.Name = "pn_Circuitos_Menu";
             this.pn_Circuitos_Menu.Size = new System.Drawing.Size(299, 703);
             this.pn_Circuitos_Menu.TabIndex = 6;
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoltar.Location = new System.Drawing.Point(12, 658);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(275, 35);
+            this.btnVoltar.TabIndex = 0;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // F_Sistemas
             // 
@@ -120,10 +135,12 @@
             this.Controls.Add(this.tb_numEquacoes);
             this.Controls.Add(this.lb_numEquacoes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "F_Sistemas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Análise de Circuitos";
+            this.pn_Circuitos_Menu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,6 +155,7 @@
         private System.Windows.Forms.Button btn_CalcularSistema;
         private System.Windows.Forms.Panel pnl_Equacoes;
         private System.Windows.Forms.Panel pn_Circuitos_Menu;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }
 

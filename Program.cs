@@ -16,7 +16,7 @@ namespace AnaliseCircuitos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new F_Sistemas());
+            Application.Run(new F_MenuPrincipal());
         }
     }
 }

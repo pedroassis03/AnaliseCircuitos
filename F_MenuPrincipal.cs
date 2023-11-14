@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CanhaoAlvo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,5 +19,25 @@ namespace AnaliseCircuitos
             InitializeComponent();
         }
 
+        private void btn_Circuitos_Principal_Click(object sender, EventArgs e)
+        {
+            F_Sistemas f_sistemas = new F_Sistemas();
+
+            f_sistemas.Show();
+        }
+
+        private void btn_Lancamento_Principal_Click(object sender, EventArgs e)
+        {
+            F_Lancamento f_lancamento = new F_Lancamento();
+
+            f_lancamento.Show();
+        }
+
+        private void btn_Historico_Principal_Click(object sender, EventArgs e)
+        {
+            F_Historico f_Historico = new F_Historico();
+
+            f_Historico.Show();
+        }
     }
 }
