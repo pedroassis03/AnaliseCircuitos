@@ -205,6 +205,7 @@
             this.Name = "F_Lancamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F_Lancamento";
+            this.Load += new System.EventHandler(this.F_Lancamento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGeogebra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

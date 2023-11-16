@@ -33,6 +33,11 @@ namespace CanhaoAlvo
             Clipboard.SetText(linkLabelEquacao.Text);
         }
 
+        private void F_Lancamento_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnCalcular_Click_1(object sender, EventArgs e)
         {
             CalcularLimites();
@@ -143,7 +148,7 @@ namespace CanhaoAlvo
         private static void EscreverNoHistorico(string historicoInfo)
         {
             // Caminho do arquivo de histórico
-            string caminhoHistorico = "historico.txt";
+            string caminhoHistorico = Path.Combine(Application.StartupPath, "historico.txt");
 
             try
             {
@@ -154,6 +159,9 @@ namespace CanhaoAlvo
                     using (StreamWriter sw = File.CreateText(caminhoHistorico))
                     {
                         sw.WriteLine("Histórico de Ângulos:\n\n");
+                        MessageBox.Show("Um histórico foi gerado no seguinte arquivo:\n\n" + caminhoHistorico);
+
+                        sw.Close();
                     }
                 }
 
@@ -161,6 +169,7 @@ namespace CanhaoAlvo
                 using (StreamWriter sw = File.AppendText(caminhoHistorico))
                 {
                     sw.WriteLine(historicoInfo);
+                    sw.Close();
                 }
             }
             catch (Exception ex)

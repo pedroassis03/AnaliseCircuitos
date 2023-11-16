@@ -85,6 +85,8 @@ namespace AnaliseCircuitos
             {
                 using (StreamWriter sw = File.CreateText(caminhoArquivo))
                 {
+                    sw.WriteLine("Histórico de Ân:\n\n");
+
                     foreach (var textbox in textBoxes)
                     {
                         // Escreve conteúdo no arquivo

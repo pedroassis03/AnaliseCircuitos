@@ -37,6 +37,10 @@
             this.pnl_Equacoes = new System.Windows.Forms.Panel();
             this.pn_Circuitos_Menu = new System.Windows.Forms.Panel();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.lb_ExemploEquacao = new System.Windows.Forms.Label();
+            this.lb_Equacao1 = new System.Windows.Forms.Label();
+            this.lb_Exemplo2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pn_Circuitos_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,6 +108,10 @@
             // pn_Circuitos_Menu
             // 
             this.pn_Circuitos_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(76)))), ((int)(((byte)(143)))));
+            this.pn_Circuitos_Menu.Controls.Add(this.label1);
+            this.pn_Circuitos_Menu.Controls.Add(this.lb_Exemplo2);
+            this.pn_Circuitos_Menu.Controls.Add(this.lb_Equacao1);
+            this.pn_Circuitos_Menu.Controls.Add(this.lb_ExemploEquacao);
             this.pn_Circuitos_Menu.Controls.Add(this.btnVoltar);
             this.pn_Circuitos_Menu.Location = new System.Drawing.Point(0, -1);
             this.pn_Circuitos_Menu.Name = "pn_Circuitos_Menu";
@@ -120,6 +128,50 @@
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // lb_ExemploEquacao
+            // 
+            this.lb_ExemploEquacao.AutoSize = true;
+            this.lb_ExemploEquacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ExemploEquacao.ForeColor = System.Drawing.SystemColors.Control;
+            this.lb_ExemploEquacao.Location = new System.Drawing.Point(7, 99);
+            this.lb_ExemploEquacao.Name = "lb_ExemploEquacao";
+            this.lb_ExemploEquacao.Size = new System.Drawing.Size(243, 25);
+            this.lb_ExemploEquacao.TabIndex = 1;
+            this.lb_ExemploEquacao.Text = "Exemplos de equações:";
+            // 
+            // lb_Equacao1
+            // 
+            this.lb_Equacao1.AutoSize = true;
+            this.lb_Equacao1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Equacao1.ForeColor = System.Drawing.SystemColors.Control;
+            this.lb_Equacao1.Location = new System.Drawing.Point(8, 148);
+            this.lb_Equacao1.Name = "lb_Equacao1";
+            this.lb_Equacao1.Size = new System.Drawing.Size(193, 20);
+            this.lb_Equacao1.TabIndex = 2;
+            this.lb_Equacao1.Text = "-20i1 + 10i2 + 0i3 = -10";
+            // 
+            // lb_Exemplo2
+            // 
+            this.lb_Exemplo2.AutoSize = true;
+            this.lb_Exemplo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Exemplo2.ForeColor = System.Drawing.SystemColors.Control;
+            this.lb_Exemplo2.Location = new System.Drawing.Point(8, 188);
+            this.lb_Exemplo2.Name = "lb_Exemplo2";
+            this.lb_Exemplo2.Size = new System.Drawing.Size(187, 20);
+            this.lb_Exemplo2.TabIndex = 3;
+            this.lb_Exemplo2.Text = "10i1 - 45i2 + 20i3 = 15";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(8, 227);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "5i1 - 35i2 = -5";
             // 
             // F_Sistemas
             // 
@@ -141,6 +193,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Análise de Circuitos";
             this.pn_Circuitos_Menu.ResumeLayout(false);
+            this.pn_Circuitos_Menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,6 +209,10 @@
         private System.Windows.Forms.Panel pnl_Equacoes;
         private System.Windows.Forms.Panel pn_Circuitos_Menu;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Label lb_Equacao1;
+        private System.Windows.Forms.Label lb_ExemploEquacao;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_Exemplo2;
     }
 }
 
